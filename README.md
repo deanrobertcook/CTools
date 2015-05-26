@@ -9,5 +9,8 @@ I eventually hope to get into programming embedded systems and electronics, so I
 my ability in C, and getting over that "fear" I feel when I look at a large page of C code would be worth while.
 
 ## Course
-For the next few weeks, I'll just be following these course notes:
+For the next few weeks, I'll just be following these course notes (my thanks to Jack Straub for his efforts) :
 http://faculty.washington.edu/jstraub/dsa/Master_2_7a.pdf
+
+And there is more information from the course's homepage, found here:
+http://faculty.washington.edu/jstraub/dsa/
