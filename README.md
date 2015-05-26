@@ -17,4 +17,4 @@ http://faculty.washington.edu/jstraub/dsa/
 
 
 #### Other Resources
-* [http://www.cprogramming.com/](C Programming) - a website with lots of quick and dirty tutorials
+* [C Programming](http://www.cprogramming.com/) - a website with lots of quick and dirty tutorials
