@@ -1,4 +1,7 @@
 ##Git ignore for C Project
 
+#GCC pre-compiled header files:
+*.gch
+
 #Commonly used name for my test driver executables:
 test_driver

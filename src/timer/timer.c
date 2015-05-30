@@ -15,7 +15,7 @@ TIMER_p_t TIMER_create_timer(void) {
 }
 
 TIMER_p_t TIMER_destroy(TIMER_p_t timer) {
-	UTILS_free(timer);
+	timer = UTILS_free(timer);
 	return timer;
 }
 
@@ -32,7 +32,7 @@ size_t TIMER_stop(TIMER_p_t timer) {
 }
 
 size_t TIMER_interrogate(TIMER_p_t timer) {
-	timer->elapsedTime += timer(NULL) - timer->startTime;
+	timer->elapsedTime += time(NULL) - timer->startTime;
 	return timer->elapsedTime;
 }
 

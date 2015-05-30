@@ -8,6 +8,8 @@
 #ifndef UTILS_H
 #define UTILS_H
 
+#include <stdlib.h>
+
 /*
  * Makes booleans a little more readable
  */
@@ -29,7 +31,7 @@
  * Provides us dynamic memory for a new object pointer
  * Much like the new keyword in Java or C++
  */
-#define UTILS_NEW( type ) ((type *)CDA_malloc( sizeof(type) ))
+#define UTILS_NEW( type ) ((type *)UTILS_malloc( sizeof(type) ))
 
 /*
  * The next two macros give us the ability to easily create new
@@ -59,6 +61,6 @@ typedef unsigned long	UTILS_UINT32_t;
 void *UTILS_malloc(size_t);
 void *UTILS_calloc(size_t, size_t);
 void *UTILS_realloc(void*, size_t);
-void UTILS_free(void*);
+void *UTILS_free(void*);
 
 #endif

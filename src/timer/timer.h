@@ -16,7 +16,7 @@
 
 #include <stdlib.h>
 #include <time.h>
-#include "utils.h"
+#include "src/utils/utils.h"
 
 /**
  * Structure to encapsulate a timer. It contains a variable
@@ -41,7 +41,12 @@ typedef struct timer_s {
 TIMER_p_t TIMER_create_timer(void);
 
 /**
- * Destroys an instance of a timer that we no longer need
+ * Destroys an instance of a timer that we no longer need.
+ * It is good practice to assign the timer pointer the return
+ * value of TIMER_destroy (NULL), in case that variable is used
+ * later in the code. If at the end of a function, however, it's
+ * okay just to call TIMER_destroy() and let the pointer fall
+ * out of scope
  *
  */
 TIMER_p_t TIMER_destroy(TIMER_p_t);

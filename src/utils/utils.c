@@ -4,7 +4,8 @@
  *  Created on: May 26, 2015
  *      Author: deancook
  */
-#include <stdlib.h>
+
+#include "utils.h"
 
 void *UTILS_malloc(size_t size) {
 	void *mem = malloc(size);
@@ -30,7 +31,7 @@ void *UTILS_realloc(void *mem, size_t size) {
 	return mem;
 }
 
-void UTILS_free(void* mem) {
-	if (mem != NULL)
-		free(mem);
+void *UTILS_free(void* mem) {
+	free(mem);
+	return NULL;
 }
