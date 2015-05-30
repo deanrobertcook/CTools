@@ -1,0 +1,4 @@
+##Git ignore for C Project
+
+#Commonly used name for my test driver executables:
+test_driver
