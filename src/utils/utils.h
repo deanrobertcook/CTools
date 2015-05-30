@@ -44,13 +44,13 @@
 /*
  * These custom defined types help us improve portability of our code
  */
-typedef int				UTIL_BOOL_t;
-typedef signed char 	UTIL_INT8_t;
-typedef unsigned char 	UTIL_UINT8_t;
-typedef signed int		UTIL_INT16_t;
-typedef unsigned int 	UTIL_UINT16_t;
-typedef signed long		UTIL_INT32_t;
-typedef unsigned long	UTIL_UINT32_t;
+typedef int				UTILS_BOOL_t;
+typedef signed char 	UTILS_INT8_t;
+typedef unsigned char 	UTILS_UINT8_t;
+typedef signed int		UTILS_INT16_t;
+typedef unsigned int 	UTILS_UINT16_t;
+typedef signed long		UTILS_INT32_t;
+typedef unsigned long	UTILS_UINT32_t;
 
 /*
  * The prototypes for our utility methods
